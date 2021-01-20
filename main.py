@@ -9,6 +9,8 @@
 
 from lexico import Lexico
 from sintactico import Sintactico
+from assembly import Assembly
+
 lexico = Lexico()
 lexico.lexico()
 if lexico.errorEncontrado != True:
@@ -18,5 +20,8 @@ if lexico.errorEncontrado != True:
         print("\n---Analisis Sintactico terminado---")
         for d in sintaxis.dicTypeofvariable:
             print(d,"-->",sintaxis.dicTypeofvariable[d])
+        assembly = Assembly(sintaxis.polishList, sintaxis.dicTypeofvariable)
+
+        
 
             

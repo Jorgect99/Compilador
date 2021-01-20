@@ -544,9 +544,9 @@ class Sintactico:
                     result = self.greaterEqualTo[self.typeindex[firstoperator]][self.typeindex[secondoperator]]
                 elif nodo == "<=":
                     result = self.smallerEqualTo[self.typeindex[firstoperator]][self.typeindex[secondoperator]]
-                elif nodo == "=":
+                elif nodo == "<=":
                     result = self.equalTo[self.typeindex[firstoperator]][self.typeindex[secondoperator]]
-                elif nodo == "<>":
+                elif nodo == "<=":
                     result = self.different[self.typeindex[firstoperator]][self.typeindex[secondoperator]]
                 elif nodo == "and":
                     result = self.andMatrix[self.typeindex[firstoperator]][self.typeindex[secondoperator]]
