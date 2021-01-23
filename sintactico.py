@@ -398,7 +398,7 @@ class Sintactico:
         nodo = nodo.sig
         
         nodo = self.statement(nodo)
-        self.polishList.append("BRF-D"+ str(contWhile))# :)
+        self.polishList.append("BRI-D"+ str(contWhile))# :)
         self.polishList.append("C"+ str(contWhile) + ":")
         return nodo
 

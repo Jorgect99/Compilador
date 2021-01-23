@@ -5,20 +5,16 @@ begin
 	anterior := 0;
 	actual := 1;
 	fibo := 0;
-	write("Iteraciones?");
 	read(num);
-	write("0, ");
-	write("1, ");
 	while fibo <= num do
 	begin
 		fibo := anterior + actual;
 		anterior := actual;
 		actual := fibo;
-		write(fibo,",")
+		write(fibo)
 	end;
 	if num >= 10 then
-		write("Mas de 10")
+		write(num)
 	else
-		write("Menos de 10")
+		write(num)
 end.
-
