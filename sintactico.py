@@ -132,7 +132,7 @@ class Sintactico:
             if str(errorSintactico) == self.error[1] and not self.errorEncontrado:
                 self.errorEncontrado = True
                 print(self.error[0], "en el renglon: ", numRenglon)
-    
+                exit()
     
 
     #<program> ::=program <identifier> ; <block> .

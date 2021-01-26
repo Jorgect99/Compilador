@@ -1,0 +1,232 @@
+Notas para el video 
+
+-Errores del compilador-
+
+Codigo de prueba
+program Fibbonacci;
+var
+	num: integer;
+begin
+	num := 1;
+	write(num)
+end.
+
+Lexico-> 
+500: Se esperaba digito.-
+program Fibbonacci;
+var
+    num: integer;
+begin
+    num := 1.a;
+    write(num)
+end.
+
+501: Eof inesperado.-
+program Fibbonacci;
+var
+    num: integer;
+(*
+begin
+    num := 1;
+    write(num)
+end.
+
+502: Eol inesperado.-
+program Fibbonacci;
+var
+    num: integer;
+begin
+    num := 1;
+    write("num)
+end.
+
+503: Simbolo no valido.-
+program Fibbonacci;
+var
+    num: integer;
+@
+begin
+    num := 1;
+    write(num)
+end.
+
+Sintactico-> 
+504: Se esperaba program.-  
+Fibbonacci;
+var
+    num: integer;
+begin
+    num := 1;
+    write(num)
+end.
+
+505: Se esperaba identificador.- 
+program Fibbonacci;
+var
+	
+begin
+	num := 1;
+	write(num)
+end.
+
+506: Se esperaba ;.-  
+program Fibbonacci;
+var
+    num: integer
+begin
+    num := 1;
+    write(num)
+end.
+
+508: Se esperaba begin.- 
+program Fibbonacci;
+var
+	num: integer;
+
+	write(num)
+	num := 1;
+end.
+
+509: Se esperaba :.-  
+program Fibbonacci;
+var
+	num integer;
+begin
+	num := 1;
+	write(num)
+end.
+
+510: Se esperaba algun tipo de variable.-  
+program Fibbonacci;
+var
+	num: ;
+begin
+	num := 1;
+	write(num)
+end.
+
+511: Se esperaba end.-    
+program Fibbonacci;
+var
+	num: integer;
+begin
+	num := 1;
+	write(num)
+.
+
+512: Se esperaba :=.-  
+program Fibbonacci;
+var
+	num: integer;
+begin
+	num  1;
+	write(num)
+end.
+
+514: Se esperaba (.-  
+program Fibbonacci;
+var
+	num: integer;
+begin
+	num := 1;
+	write num)
+end.
+
+515: Se esperaba ).-   
+program Fibbonacci;
+var
+	num: integer;
+begin
+	num := 1;
+	write(num
+end.
+
+518: Se esperaba then.-  
+program Fibbonacci;
+var
+	num: integer;
+begin
+	if num > 0
+end.
+
+520: Se esperaba do.-    
+program Fibbonacci;
+var
+	num: integer;
+begin
+	while num > 10
+end.
+
+521: Se esperaba factor.-  
+program Fibbonacci;
+var
+	num: integer;
+begin
+	num := 
+end.
+
+Semantico->
+522: Variable ya declarada.-   
+program Fibbonacci;
+var
+	num: integer;
+	num: real;
+begin
+	num:= 1;
+end.
+
+523: Nombre de variable no valida.- 
+program Fibbonacci;
+var
+	Fibbonacci: integer;
+begin
+	num:= 1;
+end.
+
+524: Variable no declarada.-  
+program Fibbonacci;
+var
+	a: integer;
+	c: real;
+begin
+	write(b)
+end.
+
+525: Incompatibilidad de tipos.-
+program Fibbonacci;
+var
+	a: integer;
+	c: string;
+begin
+	c:= 5 + 6
+end.
+
+-Codigo de ejemplo-
+program Fibbonacci;
+var
+	num,anterior,actual,fibo: integer;
+begin
+	anterior := 0;
+	actual := 1;
+	fibo := 0;
+	read(num);
+	while fibo <= num do
+	begin
+		fibo := anterior + actual;
+		anterior := actual;
+		actual := fibo;
+		write(fibo)
+	end;
+	if num >= 10 then
+		write(num)
+	else
+		write(num)
+end.
+
+
+-Comandos para montar y ejecutar el exe-
+mount c .
+c:
+tasm compi.asm
+tlink compi.obj
+compi.exe

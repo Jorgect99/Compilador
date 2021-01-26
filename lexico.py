@@ -13,7 +13,7 @@ class Lexico:
     lexema = ""
     errorEncontrado = False
 
-    archivo = r"D:\Escuela\micompi\Compi\code.txt"
+    archivo = r"D:\Escuela\micompi\Compilador\code.txt"
     
     matriz = [
             #  L     D     +     -     *     =     .     ,     :     ;     <     >     (     )     "    Eb   tab    Nl   Eol   Eof    oc 
